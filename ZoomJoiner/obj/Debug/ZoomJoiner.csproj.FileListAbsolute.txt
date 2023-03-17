@@ -1,0 +1,11 @@
+D:\Programs\repos\ZoomJoiner\ZoomJoiner\bin\Debug\ZoomJoiner.exe.config
+D:\Programs\repos\ZoomJoiner\ZoomJoiner\bin\Debug\ZoomJoiner.exe
+D:\Programs\repos\ZoomJoiner\ZoomJoiner\bin\Debug\ZoomJoiner.pdb
+D:\Programs\repos\ZoomJoiner\ZoomJoiner\obj\Debug\ZoomJoiner.csproj.AssemblyReference.cache
+D:\Programs\repos\ZoomJoiner\ZoomJoiner\obj\Debug\ZoomJoiner.csproj.SuggestedBindingRedirects.cache
+D:\Programs\repos\ZoomJoiner\ZoomJoiner\obj\Debug\ZoomJoiner.Form1.resources
+D:\Programs\repos\ZoomJoiner\ZoomJoiner\obj\Debug\ZoomJoiner.Properties.Resources.resources
+D:\Programs\repos\ZoomJoiner\ZoomJoiner\obj\Debug\ZoomJoiner.csproj.GenerateResource.cache
+D:\Programs\repos\ZoomJoiner\ZoomJoiner\obj\Debug\ZoomJoiner.csproj.CoreCompileInputs.cache
+D:\Programs\repos\ZoomJoiner\ZoomJoiner\obj\Debug\ZoomJoiner.exe
+D:\Programs\repos\ZoomJoiner\ZoomJoiner\obj\Debug\ZoomJoiner.pdb
