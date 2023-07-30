@@ -422,7 +422,7 @@ namespace vladnigger
                     MessageBoxButton button = MessageBoxButton.OK;
                     MessageBoxImage icon = MessageBoxImage.Information;
                     MessageBoxResult result;
-
+                    // 1
                 }
                 else if (DateTime.Now.Hour == 11 & DateTime.Now.Minute >= 10 & DateTime.Now.Minute <= 25)
                 {
