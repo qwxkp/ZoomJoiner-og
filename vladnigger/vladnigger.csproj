@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B8E0BE8B-4806-44D4-8713-9DC21441B83A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>vladnigger</RootNamespace>
-    <AssemblyName>vladnigger</AssemblyName>
+    <RootNamespace>ZoomJoiner</RootNamespace>
+    <AssemblyName>ZoomJoiner</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

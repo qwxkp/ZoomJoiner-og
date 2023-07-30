@@ -75,7 +75,7 @@
                         </StackPanel>
                         <StackPanel VerticalAlignment="Bottom" Margin="20 0 20 -350" HorizontalAlignment="Left">
                             <TextBlock TextWrapping="Wrap" Name="LessonStatus10" Style="{StaticResource bText}" HorizontalAlignment="Left" Margin="0 0 0 5" />
-                            <Button Width="155" Height="50" Style="{StaticResource Button1}" Background="Transparent" Name="AutoJoin" Click="JoinLesson12" Content="Автоподключение"/>
+                            <Button Width="155" Height="50" Style="{StaticResource Button1}" Background="Transparent" Name="AutoJoin" Click="LessonJoin" Content="Автоподключение"/>
                         </StackPanel>
                         
                     </Grid>

@@ -13,6 +13,8 @@ namespace vladnigger
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
     public partial class MainWindow : Window
     {
         private TimeSpan currentTime;
@@ -60,7 +62,8 @@ namespace vladnigger
                     }
                     index++;
                 }
-            } catch 
+            }
+            catch
             {
                 foreach (Button btn in lessonButtons)
                 {
@@ -104,7 +107,8 @@ namespace vladnigger
                     }
                     index++;
                 }
-            } catch (Exception ex){ MessageBox.Show(ex.Message); }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private async void CheckingLoop()
@@ -229,7 +233,8 @@ namespace vladnigger
 
             for (int i = 0; i != animationText.Length; i++)
             {
-                Application.Current.Dispatcher.Invoke(() => {
+                Application.Current.Dispatcher.Invoke(() =>
+                {
                     button.Content += animationText[i].ToString() == " " && button.Content.ToString().Length > 0 ? " " + animationText[++i].ToString() : animationText[i].ToString();
                 });
                 await Task.Delay(animationSpeed);
@@ -261,7 +266,8 @@ namespace vladnigger
 
             for (int i = 0; i != animationText.Length; i++)
             {
-                Application.Current.Dispatcher.Invoke(() => {
+                Application.Current.Dispatcher.Invoke(() =>
+                {
                     textBlock.Text += animationText[i].ToString() == " " && textBlock.Text.ToString().Length > 0 ? " " + animationText[++i].ToString() : animationText[i].ToString();
                 });
                 await Task.Delay(animationSpeed);
@@ -273,9 +279,778 @@ namespace vladnigger
             return (Brush)new System.Windows.Media.BrushConverter().ConvertFromString(color);
         }
 
-        private void JoinLesson12(object sender, RoutedEventArgs e)
+        public void AutoUrok1(string link)
         {
+            var t = Task.Run(async delegate
+            {
+                await Task.Delay(10);
+                return 42;
+            });
+            t.Wait();
+            Process.Start($"{link}");
+        }
+        void AutoUrok2(string link, int time)
+        {
+            var t = Task.Run(async delegate
+            {
+                await Task.Delay(time);
+                return 42;
+            });
+            t.Wait();
+            Process.Start($"{link}");
+            
+        }
+        void AutoUrok3(string link, int time)
+        {
+            var t = Task.Run(async delegate
+            {
+                await Task.Delay(time);
+                return 42;
+            });
+            t.Wait();
+            Process.Start($"{link}");
+            
+        }
+        void AutoUrok4(string link, int time)
+        {
+            var t = Task.Run(async delegate
+            {
+                await Task.Delay(time);
+                return 42;
+            });
+            t.Wait();
+            Process.Start($"{link}");
+            
+        }
+        void AutoUrok5(string link, int time)
+        {
+            var t = Task.Run(async delegate
+            {
+                await Task.Delay(time);
+                return 42;
+            });
+            t.Wait();
+            Process.Start($"{link}");
+            
+        }
+        void AutoUrok6(string link, int time)
+        {
+            var t = Task.Run(async delegate
+            {
+                await Task.Delay(time);
+                return 42;
+            });
+            t.Wait();
+            Process.Start($"{link}");
+            
+        }
+        void AutoUrok7(string link, int time)
+        {
+            var t = Task.Run(async delegate
+            {
+                await Task.Delay(time);
+                return 42;
+            });
+            t.Wait();
+            Process.Start($"{link}");
+        }
 
+
+
+
+        void LessonJoin(object sender, RoutedEventArgs e)
+            {
+            if (DateTime.Now.DayOfWeek == DayOfWeek.Monday)
+
+            {
+                if (DateTime.Now.Hour == 8 & DateTime.Now.Minute >= 25 & DateTime.Now.Minute <= 35)
+                {
+
+
+                    AutoUrok1("https://us05web.zoom.us/j/81793137250?pwd=dFEvM21GSHlmb05KYVlWeURJaTR2QT09");
+                    AutoUrok2("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok3("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok4("https://www.youtube.com/", 3255000);
+                    AutoUrok5("https://us04web.zoom.us/j/77560815613?pwd=DnW2ZGGGL0h89VSjZaFaPWbZMIkjXX.1", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/3626675144?pwd=YTBVMEJWcXZrVERqbHFNcEc4UE1qZz09", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    string messageBoxText = "Вихідні, Друже";
+                    string caption = "Нащо ти сюди зайшов?";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                    result = MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.Yes);
+
+
+
+                }
+                else if (DateTime.Now.Hour == 9 & DateTime.Now.Minute >= 20 & DateTime.Now.Minute <= 30)
+                {
+                    
+                    
+                    AutoUrok2("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 100);
+                    AutoUrok3("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok4("https://web.telegram.org/z/", 3240000);
+                    AutoUrok5("https://us04web.zoom.us/j/77560815613?pwd=DnW2ZGGGL0h89VSjZaFaPWbZMIkjXX.1", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/3626675144?pwd=YTBVMEJWcXZrVERqbHFNcEc4UE1qZz09", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 10 & DateTime.Now.Minute >= 15 & DateTime.Now.Minute <= 25)
+                {
+                    
+                    
+                    AutoUrok3("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 100);
+                    AutoUrok4("https://web.telegram.org/z/", 3255000);
+                    AutoUrok5("https://us04web.zoom.us/j/77560815613?pwd=DnW2ZGGGL0h89VSjZaFaPWbZMIkjXX.1", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/3626675144?pwd=YTBVMEJWcXZrVERqbHFNcEc4UE1qZz09", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 11 & DateTime.Now.Minute >= 10 & DateTime.Now.Minute <= 25)
+                {
+                    
+                    
+                    AutoUrok4("https://web.telegram.org/z/", 100);
+                    AutoUrok5("https://us04web.zoom.us/j/77560815613?pwd=DnW2ZGGGL0h89VSjZaFaPWbZMIkjXX.1", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/3626675144?pwd=YTBVMEJWcXZrVERqbHFNcEc4UE1qZz09", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 12 & DateTime.Now.Minute >= 5 & DateTime.Now.Minute <= 15)
+                {
+                    
+                    
+                    AutoUrok5("https://us04web.zoom.us/j/77560815613?pwd=DnW2ZGGGL0h89VSjZaFaPWbZMIkjXX.1", 100);
+                    AutoUrok6("https://us04web.zoom.us/j/3626675144?pwd=YTBVMEJWcXZrVERqbHFNcEc4UE1qZz09", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 13 & DateTime.Now.Minute >= 0 & DateTime.Now.Minute <= 10)
+                {
+                    
+                    
+                    AutoUrok6("https://us04web.zoom.us/j/3626675144?pwd=YTBVMEJWcXZrVERqbHFNcEc4UE1qZz09", 100);
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 14 & DateTime.Now.Minute >= 0 & DateTime.Now.Minute <= 10)
+                {
+                    
+                    
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 100);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else
+                {
+                    
+                }
+
+
+            }
+            else if (DateTime.Now.DayOfWeek == DayOfWeek.Tuesday)
+            {
+                if (DateTime.Now.Hour == 8 & DateTime.Now.Minute >= 25 & DateTime.Now.Minute <= 35)
+                {
+                    
+                    
+                    AutoUrok1("https://us04web.zoom.us/j/73177828356?pwd=MHVKSjZ0cFNSMkt5a05qOXJyclRLUT09");
+                    AutoUrok2("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok3("https://us04web.zoom.us/j/75913045961?pwd=qbtU4bFPc1ELoy842dk6hGXPZfI3OX.1", 3240000);
+                    AutoUrok4("https://web.telegram.org/z/", 3255000);
+                    AutoUrok5("https://us04web.zoom.us/j/77560815613?pwd=DnW2ZGGGL0h89VSjZaFaPWbZMIkjXX.1", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 9 & DateTime.Now.Minute >= 20 & DateTime.Now.Minute <= 30)
+                {
+                    
+                    
+                    AutoUrok2("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 100);
+                    AutoUrok3("https://us04web.zoom.us/j/75913045961?pwd=qbtU4bFPc1ELoy842dk6hGXPZfI3OX.1", 3240000);
+                    AutoUrok4("https://web.telegram.org/z/", 3240000);
+                    AutoUrok5("https://us04web.zoom.us/j/72252888239?pwd=93bbPv3FHfqaSQWMAUbYeug8oaa1qs.1", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 10 & DateTime.Now.Minute >= 15 & DateTime.Now.Minute <= 25)
+                {
+                    
+                    
+                    AutoUrok3("https://us04web.zoom.us/j/75913045961?pwd=qbtU4bFPc1ELoy842dk6hGXPZfI3OX.1", 100);
+                    AutoUrok4("https://web.telegram.org/z/", 3255000);
+                    AutoUrok5("https://us04web.zoom.us/j/72252888239?pwd=93bbPv3FHfqaSQWMAUbYeug8oaa1qs.1", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 11 & DateTime.Now.Minute >= 10 & DateTime.Now.Minute <= 25)
+                {
+                    
+                    
+                    AutoUrok4("https://web.telegram.org/z/", 100);
+                    AutoUrok5("https://us04web.zoom.us/j/72252888239?pwd=93bbPv3FHfqaSQWMAUbYeug8oaa1qs.1", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 12 & DateTime.Now.Minute >= 5 & DateTime.Now.Minute <= 15)
+                {
+                    
+                    
+                    AutoUrok5("https://us04web.zoom.us/j/72252888239?pwd=93bbPv3FHfqaSQWMAUbYeug8oaa1qs.1", 100);
+                    AutoUrok6("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 13 & DateTime.Now.Minute >= 0 & DateTime.Now.Minute <= 10)
+                {
+                    
+                    
+                    AutoUrok6("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 100);
+                    AutoUrok7("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 14 & DateTime.Now.Minute >= 0 & DateTime.Now.Minute <= 10)
+                {
+                    
+                    
+                    AutoUrok7("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 100);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else
+                {
+                    
+                }
+
+
+
+            }
+            else if (DateTime.Now.DayOfWeek == DayOfWeek.Wednesday)
+            {
+                if (DateTime.Now.Hour == 8 & DateTime.Now.Minute >= 25 & DateTime.Now.Minute <= 35)
+                {
+                    
+                    
+                    AutoUrok1("https://us04web.zoom.us/j/73177828356?pwd=MHVKSjZ0cFNSMkt5a05qOXJyclRLUT09");
+                    AutoUrok2("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok3("https://us04web.zoom.us/j/72252888239?pwd=93bbPv3FHfqaSQWMAUbYeug8oaa1qs.1", 3240000);
+                    AutoUrok4("https://us04web.zoom.us/j/75913045961?pwd=qbtU4bFPc1ELoy842dk6hGXPZfI3OX.1", 3255000);
+                    AutoUrok5("https://us05web.zoom.us/j/6764523122?pwd=YWtiWGdpRzZiWjE0WTlDb2lqTUpWQT09", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 9 & DateTime.Now.Minute >= 20 & DateTime.Now.Minute <= 30)
+                {
+                    
+                    
+                    AutoUrok2("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 100);
+                    AutoUrok3("https://us04web.zoom.us/j/72252888239?pwd=93bbPv3FHfqaSQWMAUbYeug8oaa1qs.1", 3240000);
+                    AutoUrok4("https://us04web.zoom.us/j/75913045961?pwd=qbtU4bFPc1ELoy842dk6hGXPZfI3OX.1", 3240000);
+                    AutoUrok5("https://us05web.zoom.us/j/6764523122?pwd=YWtiWGdpRzZiWjE0WTlDb2lqTUpWQT09", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 10 & DateTime.Now.Minute >= 15 & DateTime.Now.Minute <= 25)
+                {
+                    
+                    
+                    AutoUrok3("https://us04web.zoom.us/j/72252888239?pwd=93bbPv3FHfqaSQWMAUbYeug8oaa1qs.1", 100);
+                    AutoUrok4("https://us04web.zoom.us/j/75913045961?pwd=qbtU4bFPc1ELoy842dk6hGXPZfI3OX.1", 3240000);
+                    AutoUrok5("https://us05web.zoom.us/j/6764523122?pwd=YWtiWGdpRzZiWjE0WTlDb2lqTUpWQT09", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 11 & DateTime.Now.Minute >= 10 & DateTime.Now.Minute <= 25)
+                {
+                    
+                    
+                    AutoUrok4("https://us04web.zoom.us/j/75913045961?pwd=qbtU4bFPc1ELoy842dk6hGXPZfI3OX.1", 100);
+                    AutoUrok5("https://us05web.zoom.us/j/6764523122?pwd=YWtiWGdpRzZiWjE0WTlDb2lqTUpWQT09", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 12 & DateTime.Now.Minute >= 5 & DateTime.Now.Minute <= 15)
+                {
+                    
+                    
+                    AutoUrok5("https://us05web.zoom.us/j/6764523122?pwd=YWtiWGdpRzZiWjE0WTlDb2lqTUpWQT09", 100);
+                    AutoUrok6("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 13 & DateTime.Now.Minute >= 0 & DateTime.Now.Minute <= 10)
+                {
+                    
+                    
+                    AutoUrok6("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 100);
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 14 & DateTime.Now.Minute >= 0 & DateTime.Now.Minute <= 10)
+                {
+                    
+                    
+                    AutoUrok7("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 100);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else
+                {
+                    
+                }
+
+            }
+            else if (DateTime.Now.DayOfWeek == DayOfWeek.Thursday)
+            {
+
+                if (DateTime.Now.Hour == 8 & DateTime.Now.Minute >= 25 & DateTime.Now.Minute <= 35)
+                {
+                    
+                    
+                    AutoUrok1("https://us04web.zoom.us/j/3626675144?pwd=YTBVMEJWcXZrVERqbHFNcEc4UE1qZz09");
+                    AutoUrok2("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok3("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok4("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 3255000);
+                    AutoUrok5("https://us05web.zoom.us/j/81793137250?pwd=dFEvM21GSHlmb05KYVlWeURJaTR2QT09", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/77139151153?pwd=t1NaCuhRdQhA6YglMRoql6dqF6d7cT.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 9 & DateTime.Now.Minute >= 20 & DateTime.Now.Minute <= 30)
+                {
+                    
+                    
+                    AutoUrok2("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 100);
+                    AutoUrok3("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    AutoUrok4("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 3240000);
+                    AutoUrok5("https://us05web.zoom.us/j/81793137250?pwd=dFEvM21GSHlmb05KYVlWeURJaTR2QT09", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/77139151153?pwd=t1NaCuhRdQhA6YglMRoql6dqF6d7cT.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 10 & DateTime.Now.Minute >= 15 & DateTime.Now.Minute <= 25)
+                {
+                    
+                    
+                    AutoUrok3("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 100);
+                    AutoUrok4("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 3255000);
+                    AutoUrok5("https://us05web.zoom.us/j/81793137250?pwd=dFEvM21GSHlmb05KYVlWeURJaTR2QT09", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/77139151153?pwd=t1NaCuhRdQhA6YglMRoql6dqF6d7cT.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 11 & DateTime.Now.Minute >= 10 & DateTime.Now.Minute <= 25)
+                {
+                    
+                    
+                    AutoUrok4("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 100);
+                    AutoUrok5("https://us05web.zoom.us/j/81793137250?pwd=dFEvM21GSHlmb05KYVlWeURJaTR2QT09", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/77139151153?pwd=t1NaCuhRdQhA6YglMRoql6dqF6d7cT.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 12 & DateTime.Now.Minute >= 5 & DateTime.Now.Minute <= 15)
+                {
+                    
+                    
+                    AutoUrok5("https://us05web.zoom.us/j/81793137250?pwd=dFEvM21GSHlmb05KYVlWeURJaTR2QT09", 100);
+                    AutoUrok6("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/77139151153?pwd=t1NaCuhRdQhA6YglMRoql6dqF6d7cT.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 13 & DateTime.Now.Minute >= 0 & DateTime.Now.Minute <= 10)
+                {
+                    
+                    
+                    AutoUrok6("https://us04web.zoom.us/j/74535513574?pwd=ox6Yr29SKYjnnfrVf0Zy0MlAudaUf8.1", 100);
+                    AutoUrok7("https://us04web.zoom.us/j/77139151153?pwd=t1NaCuhRdQhA6YglMRoql6dqF6d7cT.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 14 & DateTime.Now.Minute >= 0 & DateTime.Now.Minute <= 10)
+                {
+                    
+                    
+                    AutoUrok7("https://us04web.zoom.us/j/77139151153?pwd=t1NaCuhRdQhA6YglMRoql6dqF6d7cT.1", 100);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else
+                {
+                    
+                }
+
+            }
+
+            else if (DateTime.Now.DayOfWeek == DayOfWeek.Friday)
+            {
+                if (DateTime.Now.Hour == 8 & DateTime.Now.Minute >= 25 & DateTime.Now.Minute <= 35)
+                {
+                    
+                    
+                    AutoUrok1("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1");
+                    AutoUrok2("https://youtube.com", 3240000);
+                    AutoUrok3("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 3240000);
+                    AutoUrok4("https://us05web.zoom.us/j/6764523122?pwd=YWtiWGdpRzZiWjE0WTlDb2lqTUpWQT09", 3255000);
+                    AutoUrok5("https://us04web.zoom.us/j/75913045961?pwd=qbtU4bFPc1ELoy842dk6hGXPZfI3OX.1", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+
+                }
+                else if (DateTime.Now.Hour == 9 & DateTime.Now.Minute >= 20 & DateTime.Now.Minute <= 30)
+                {
+                    
+                    
+                    AutoUrok2("https://youtube.com", 100);
+                    AutoUrok3("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 3240000);
+                    AutoUrok4("https://us05web.zoom.us/j/6764523122?pwd=YWtiWGdpRzZiWjE0WTlDb2lqTUpWQT09", 3255000);
+                    AutoUrok5("https://us04web.zoom.us/j/75913045961?pwd=qbtU4bFPc1ELoy842dk6hGXPZfI3OX.1", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 10 & DateTime.Now.Minute >= 15 & DateTime.Now.Minute <= 25)
+                {
+                    
+                    
+                    AutoUrok3("https://us04web.zoom.us/j/72161361348?pwd=azbctGwbaIjGEgcL5OiusFFfvLEH1r.1", 100);
+                    AutoUrok4("https://us05web.zoom.us/j/6764523122?pwd=YWtiWGdpRzZiWjE0WTlDb2lqTUpWQT09", 3255000);
+                    AutoUrok5("https://us04web.zoom.us/j/75913045961?pwd=qbtU4bFPc1ELoy842dk6hGXPZfI3OX.1", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 11 & DateTime.Now.Minute >= 10 & DateTime.Now.Minute <= 25)
+                {
+                    
+                    
+                    AutoUrok4("https://us05web.zoom.us/j/6764523122?pwd=YWtiWGdpRzZiWjE0WTlDb2lqTUpWQT09", 100);
+                    AutoUrok5("https://us04web.zoom.us/j/75913045961?pwd=qbtU4bFPc1ELoy842dk6hGXPZfI3OX.1", 3240000);
+                    AutoUrok6("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 12 & DateTime.Now.Minute >= 5 & DateTime.Now.Minute <= 15)
+                {
+                    
+                    
+                    AutoUrok5("https://us04web.zoom.us/j/75913045961?pwd=qbtU4bFPc1ELoy842dk6hGXPZfI3OX.1", 100);
+                    AutoUrok6("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 3240000);
+                    AutoUrok7("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 13 & DateTime.Now.Minute >= 0 & DateTime.Now.Minute <= 10)
+                {
+                    
+                    
+                    AutoUrok6("https://us04web.zoom.us/j/7733527729?pwd=f780aruX8l4AhGSaWpBRj2sPs58jnx.1", 100);
+                    AutoUrok7("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 3240000);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+                }
+                else if (DateTime.Now.Hour == 14 & DateTime.Now.Minute >= 0 & DateTime.Now.Minute <= 10)
+                {
+                    
+                    
+                    AutoUrok7("https://us04web.zoom.us/j/79248404114?pwd=AyLWCMjZnzxtI6ZTRRbpDQyYdXXSqy.1", 100);
+                    var time = Task.Delay(10000);
+                    time.Wait();
+                    string messageBoxText = "Вітаю, Друже, все закінчилося";
+                    string caption = "Все на сьогодні";
+                    MessageBoxButton button = MessageBoxButton.OK;
+                    MessageBoxImage icon = MessageBoxImage.Information;
+                    MessageBoxResult result;
+
+
+                }
+                else
+                {
+                    
+                }
+
+            }
+            else if (DateTime.Now.DayOfWeek == DayOfWeek.Saturday || DateTime.Now.DayOfWeek == DayOfWeek.Sunday)
+            {
+                string messageBoxText = "Вихідні, Друже";
+                string caption = "Нащо ти сюди зайшов?";
+                MessageBoxButton button = MessageBoxButton.OK;
+                MessageBoxImage icon = MessageBoxImage.Information;
+                MessageBoxResult result;
+            }
+            else
+            {
+                
+            }
+        }
         }
     }
-}
