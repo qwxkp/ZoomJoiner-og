@@ -383,7 +383,7 @@ namespace vladnigger
                     result = MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.Yes);
 
 
-                    // hy
+                    // hy1
                 }
                 else if (DateTime.Now.Hour == 9 & DateTime.Now.Minute >= 20 & DateTime.Now.Minute <= 30)
                 {
